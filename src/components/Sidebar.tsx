@@ -99,7 +99,7 @@ const Sidebar = () => {
                   {item.icon}
                 </span>
                 <span
-                  className={`transition-all duration-300 whitespace-nowrap ${
+                  className={`transition-all duration-300 ${
                     collapsed ? "opacity-0 w-0" : "opacity-100"
                   }`}
                 >
@@ -135,7 +135,7 @@ const Sidebar = () => {
                   {item.icon}
                 </span>
                 <span
-                  className={`transition-all duration-300 whitespace-nowrap ${
+                  className={`transition-all duration-300  ${
                     collapsed ? "opacity-0 w-0" : "opacity-100"
                   }`}
                 >
@@ -163,7 +163,7 @@ const Sidebar = () => {
                 {item.icon}
               </span>
               <span
-                className={`transition-all duration-300 whitespace-nowrap ${
+                className={`transition-all duration-300 ${
                   collapsed ? "opacity-0 w-0" : "opacity-100"
                 }`}
               >
