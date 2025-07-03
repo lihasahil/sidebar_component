@@ -11,6 +11,7 @@ import { CiSettings } from "react-icons/ci";
 import Profile from "./Profile";
 import CollapsibleMenu from "./CollapsableMenu";
 import ThemeContext from "../context/ThemeContext";
+import { FaSun, FaMoon } from "react-icons/fa6";
 
 const Sidebar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -74,9 +75,13 @@ const Sidebar = () => {
             aria-label="Toggle theme"
           >
             {isDark ? (
-              <span className="text-yellow-300 text-md">☀️</span>
+              <span className="text-yellow-300 text-md">
+                <FaSun />
+              </span>
             ) : (
-              <span className="text-gray-700 text-md">🌙</span>
+              <span className="text-gray-700 text-md">
+                <FaMoon />
+              </span>
             )}
           </button>
         </div>
